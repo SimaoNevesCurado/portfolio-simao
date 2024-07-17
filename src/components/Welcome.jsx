@@ -6,7 +6,7 @@ const Welcome = () => {
   const handleDownload = () => {
     try {
       const link = document.createElement('a');
-      link.href = '/assets/CV2024.pdf'; // Ensure this path is correct
+      link.href = "public\CV2024.pdf"; 
       link.download = 'SimaoCurado.pdf';
       document.body.appendChild(link);
       link.click();
