@@ -55,9 +55,14 @@ const Welcome = () => {
             <motion.button
               onClick={handleDownload}
               variants={animateContainerLeft(1)}
+              whileHover={{ scale: 1.1 }}
+         whileTap={{ scale: 1.1 }}
+         drag="x"
+         dragConstraints={{ left: -100, right: 100 }}
               initial="hidden"
               animate="visible"
-              className="mt-4 px-6 py-3 border border-neutral-100 bg-transparent text-lg font-semibold rounded-md text-neutral-100 hover:border-teal-700 hover:text-white hover:bg-gradient-to-r hover:from-teal-600 hover:via-teal-700 hover:to-blue-800 hover:ring-2 hover:ring-teal-500 hover:ring-opacity-50 focus:outline-none"
+              className="mt-4 px-6 py-3 border border-neutral-100 bg-transparent text-lg font-semibold 
+              rounded-md text-neutral-100 hover:ring-opacity-50 focus:outline-none"
             >
               Download CV
             </motion.button>

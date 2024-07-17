@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { NAVBAR_TXT } from "../constants";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
@@ -12,18 +13,36 @@ const Navbar = () => {
         <h2 className="text-3xl font-bold">{NAVBAR_TXT}</h2>
       </div>
       <div className="flex items-center justify-center gap-4 text-2xl">
-        <a href="https://www.linkedin.com/in/simaonevescurado/" aria-label="LinkedIn">
+        <motion.a 
+         whileHover={{ scale: 1.2 }}
+         whileTap={{ scale: 1.1 }}
+         drag="x"
+         dragConstraints={{ left: -100, right: 100 }}
+
+        href="https://www.linkedin.com/in/simaonevescurado/" aria-label="LinkedIn">
           <FaLinkedin />
-        </a>
-        <a href="https://github.com/SimaoNevesCurado" aria-label="GitHub">
+        </motion.a>
+        <motion.a 
+         whileHover={{ scale: 1.2 }}
+         whileTap={{ scale: 1.1 }}
+         drag="x"
+         dragConstraints={{ left: -100, right: 100 }} href="https://github.com/SimaoNevesCurado" aria-label="GitHub">
           <FaGithub />
-        </a>
-        <a href="" aria-label="Twitter">
+        </motion.a>
+        <motion.a 
+         whileHover={{ scale: 1.2 }}
+         whileTap={{ scale: 1.1 }}
+         drag="x"
+         dragConstraints={{ left: -100, right: 100 }} href="" aria-label="Twitter">
           <FaSquareXTwitter />
-        </a>
-        <a href="" aria-label="Instagram">
+        </motion.a>
+        <motion.a 
+         whileHover={{ scale: 1.2 }}
+         whileTap={{ scale: 1.1 }}
+         drag="x"
+         dragConstraints={{ left: -100, right: 100 }} href="" aria-label="Instagram">
           <FaInstagram />
-        </a>
+        </motion.a>
       </div>
     </nav>
   );
