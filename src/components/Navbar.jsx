@@ -33,14 +33,14 @@ const Navbar = () => {
          whileHover={{ scale: 1.2 }}
          whileTap={{ scale: 1.1 }}
          drag="x"
-         dragConstraints={{ left: -100, right: 100 }} href="" aria-label="Twitter">
+         dragConstraints={{ left: -100, right: 100 }} href="https://x.com/SimaoCurado" aria-label="Twitter">
           <FaSquareXTwitter />
         </motion.a>
         <motion.a 
          whileHover={{ scale: 1.2 }}
          whileTap={{ scale: 1.1 }}
          drag="x"
-         dragConstraints={{ left: -100, right: 100 }} href="" aria-label="Instagram">
+         dragConstraints={{ left: -100, right: 100 }} href="https://www.instagram.com/simao.curado/" aria-label="Instagram">
           <FaInstagram />
         </motion.a>
       </div>
