@@ -4,13 +4,17 @@ import { motion } from "framer-motion";
 
 const Welcome = () => {
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = 'public\CV2024.pdf';
-    link.download = 'SimaoCurado.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    try {
+      const link = document.createElement('a');
+      link.href = '/assets/CV2024.pdf'; // Ensure this path is correct
+      link.download = 'SimaoCurado.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading the file:', error);
+    }
+  }
 
   const animateContainerLeft = (tempodelay) => ({
     hidden: { x: -100, opacity: 0 },
