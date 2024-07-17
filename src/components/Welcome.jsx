@@ -6,7 +6,7 @@ const Welcome = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '../assets/SimaoCuradoSV.png';
-    link.download = 'SimaoCurado.pdf';
+    link.download = 'SimaoCurado.png';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
