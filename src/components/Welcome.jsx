@@ -6,7 +6,7 @@ const Welcome = () => {
   const handleDownload = () => {
     try {
       const link = document.createElement('a');
-      link.href = "public\CV2024.pdf"; 
+      link.href = '/CV2024.pdf'; 
       link.download = 'SimaoCurado.pdf';
       document.body.appendChild(link);
       link.click();
@@ -14,7 +14,8 @@ const Welcome = () => {
     } catch (error) {
       console.error('Error downloading the file:', error);
     }
-  }
+  };
+  
 
   const animateContainerLeft = (tempodelay) => ({
     hidden: { x: -100, opacity: 0 },
