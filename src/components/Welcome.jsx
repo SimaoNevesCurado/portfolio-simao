@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const Welcome = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '../assets/SimaoCuradoSV.png';
-    link.download = 'SimaoCurado.png';
+    link.href = '../assets/CV2024.pdf';
+    link.download = 'SimaoCurado.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
